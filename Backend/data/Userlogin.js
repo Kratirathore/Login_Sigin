@@ -39,7 +39,7 @@ router.post('/usersignup', [
                     id: user.id
                 }
             }
-            const jwt_Sign = "SachinSAXENA"
+            const jwt_Sign = "Shipra_Rathore"
             const jwttoken = jwt.sign(data, jwt_Sign)
             success = true
             res.json({ success, jwttoken })
@@ -76,7 +76,7 @@ router.post("/ulogin", [
                 id: user.id
             }
         }
-        const jwt_Sign = "SachinSAXENA"
+        const jwt_Sign = "Shipra_Rathore"
         const authtoken = jwt.sign(payload, jwt_Sign)
 
         res.json({ success: true, authtoken })
