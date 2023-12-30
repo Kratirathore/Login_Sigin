@@ -1,6 +1,5 @@
 import React, {useContext, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-// import LoginAPI from './ContextAPi/LoginAPI'
 import DemoAPI from "./ContextApi/DemoAPI"
 function SignIn() {
   
@@ -20,7 +19,6 @@ function SignIn() {
       body: JSON.stringify({ email: credintial.email, password: credintial.password })
     });
     const json = await response.json()
-    // console.log(json)
     if (json.success) {
       localStorage.setItem('token', json.authtoken)
       showAlert("Login Successfully", 'success')
@@ -31,21 +29,12 @@ function SignIn() {
       history('/signin')
     }
   }
-  console.log('a')
   const handleChange = (e) => {
     setMycredintial({ ...credintial, [e.target.name]: e.target.value })
   }
   return (
     <>
       <div className="container text-center" style={{ marginTop: '90px', height: '29rem', width: '48rem' }}>
-        <div className="row align-items-start">
-          <div className="col">
-          </div>
-          <div className="col">
-          </div>
-          <div className="col">
-          </div>
-        </div>
         <div className="container text-center" style={{ marginTop: '25px' }}>
           <div className="row align-items-start">
             <div className="col">
@@ -58,7 +47,6 @@ function SignIn() {
                   <div style={{ display: 'grid', marginTop: "5px", marginBottom: '10px' }}>
                     <input type="text" value={credintial.email} name="email" id="email" onChange={handleChange} />
                   </div>
-
                   <h6 className="card-subtitle mb-2 text-body-secondary" style={{ textAlign: 'start' }}>Password</h6>
                   <div style={{ display: 'grid' }}>
                     <input type="password" value={credintial.password} name="password" id="password" onChange={handleChange} />
@@ -73,15 +61,6 @@ function SignIn() {
                 </div>
               </div>
             </div>
-            <div className="col">
-            </div>
-          </div>
-        </div>
-        <div className="row align-items-start">
-          <div className="col">
-          </div>
-
-          <div className="col">
           </div>
         </div>
         <div className="row align-items-start">
