@@ -50,15 +50,6 @@ const handleChange = (e) => {
 return (
     <>
         <div className="container text-center" style={{marginTop: '90px', height: '29rem', width: '48rem' }} >
-            <div className="row align-items-start">
-                <div className="col">
-                </div>
-                <div className="col">
-                    {/* <img src={door} alt="DoorPoint" style={{ width: '8rem' }} /> */}
-                </div>
-                <div className="col">
-                </div>
-            </div>
             <div className="container text-center" style={{ marginTop: '25px' }}>
                 <div className="row align-items-start">
                     <div className="col">
@@ -128,17 +119,6 @@ return (
                     </div>
                     <div className="col">
                     </div>
-                </div>
-            </div>
-            <div className="row align-items-start" style={{ marginTop: '16px' }}>
-                <div className="col">
-                </div>
-                <div className="col">
-                    <div style={{ border: '1px solid gray', position: 'relative', width: '6rem', top: '21px', right: '3rem', opacity: '0.22' }}></div>
-                    <div style={{ border: '1px solid gray', position: 'relative', width: '6rem', top: '21px', left: '11.1rem', opacity: '0.22' }}></div>
-                    {/* <img src={door} alt="DoorPoint" style={{ width: '8rem' }} /> */}
-                </div>
-                <div className="col">
                 </div>
             </div>
         </div>
