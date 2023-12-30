@@ -6,7 +6,6 @@ import SignUp from './SignUp';
 import Welcome from './Welcome';
 import DemoState from './ContextApi/DemoState'
 function App() {
-  console.log("AS")
   return (
     <>
       <DemoState>
